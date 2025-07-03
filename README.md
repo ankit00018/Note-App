@@ -14,24 +14,6 @@ It includes user authentication and full CRUD operations for managing personal n
 
 ---
 
-## 📁 Folder Structure
-notes-app/
-├── models/
-│ ├── User.js
-│ └── Note.js
-├── routes/
-│ ├── auth.js
-│ └── notes.js
-├── middleware/
-│ └── authMiddleware.js
-├── .env
-├── index.js
-├── package.json
-├── .gitignore
-└── README.md
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
@@ -39,3 +21,9 @@ notes-app/
 ```bash
 git clone https://github.com/ankit00018/Note-App.git
 cd Note-App
+
+---
+### 2. Install the Dependencies
+
+```bash
+npm install
