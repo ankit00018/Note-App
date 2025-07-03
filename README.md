@@ -39,10 +39,3 @@ notes-app/
 ```bash
 git clone https://github.com/ankit00018/Note-App.git
 cd Note-App
-
-```markdown
-
-### 2. Install the Dependencies
-
-```bash
-npm install
