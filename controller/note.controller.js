@@ -1,6 +1,5 @@
 import Note from "../model/note.model.js";
 
-// Create a new note
 export const createNote = async (req, res) => {
   try {
     const { title, content } = req.body;
@@ -15,7 +14,6 @@ export const createNote = async (req, res) => {
   }
 };
 
-// Get all notes for the logged-in user
 export const getNotes = async (req, res) => {
   try {
     const notes = await Note.find({ user: req.userId }).sort({ createdAt: -1 });
@@ -25,7 +23,6 @@ export const getNotes = async (req, res) => {
   }
 };
 
-// Update a note
 export const updateNote = async (req, res) => {
   try {
     const { id } = req.params;
@@ -45,7 +42,6 @@ export const updateNote = async (req, res) => {
   }
 };
 
-// Delete a note
 export const deleteNote = async (req, res) => {
   try {
     const { id } = req.params;
