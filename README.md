@@ -21,3 +21,11 @@ It includes user authentication and full CRUD operations for managing personal n
 ```bash
 git clone https://github.com/ankit00018/Note-App.git
 cd Note-App
+
+
+2. Install Dependencies
+
+npm install
+
+
+
