@@ -27,5 +27,22 @@ cd Note-App
 
 npm install
 
+3. Create the .env File
 
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+
+4. Run `node server.js` (or `npm start` if you add scripts)
+
+## API Endpoints
+
+- POST `/api/auth/register` — Register user
+- POST `/api/auth/login` — Login user, returns JWT token
+- GET `/api/notes` — Get all notes (Auth required)
+- POST `/api/notes` — Create note (Auth required)
+- PUT `/api/notes/:id` — Update note (Auth required)
+- DELETE `/api/notes/:id` — Delete note (Auth required)
+
+Use `Authorization: Bearer <token>` header for all notes endpoints.
 
